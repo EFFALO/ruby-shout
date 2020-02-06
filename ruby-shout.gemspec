@@ -3,6 +3,8 @@
 # Instead, edit Jeweler::Tasks in Rakefile, and run 'rake gemspec'
 # -*- encoding: utf-8 -*-
 
+$LOAD_PATH.push File.expand_path('../lib', __FILE__)
+
 Gem::Specification.new do |s|
   s.name = "ruby-shout"
   s.version = "2.2.2"
@@ -40,4 +42,3 @@ Gem::Specification.new do |s|
   else
   end
 end
-
