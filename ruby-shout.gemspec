@@ -4,6 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 $:.push File.expand_path('../lib', __FILE__)
+require 'ruby-shout'
 
 Gem::Specification.new do |s|
   s.name = "ruby-shout"
@@ -18,14 +19,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = [
     "README.textile"
   ]
-  s.files = [
-    "README.textile",
-    "Rakefile",
-    "VERSION",
-    "ext/extconf.rb",
-    "ext/shout_ext.c",
-    "lib/shout.rb"
-  ]
+  s.files         = `git ls-files`.split("\n")
   s.homepage = "http://github.com/niko/ruby-shout"
   s.require_paths = ["lib"]
   s.rubyforge_project = "ruby-shout"
